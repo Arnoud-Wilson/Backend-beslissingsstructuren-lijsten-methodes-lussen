@@ -6,14 +6,15 @@ public class Staatslot {
     public static void main(String[] args) {
         Scanner gebruikersInput = new Scanner(System.in);
 
-        System.out.println("Wat is uw leeftijd?");
-        int gegevenLeeftijd = gebruikersInput.nextInt();
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Wat is uw leeftijd?");
+            int gegevenLeeftijd = gebruikersInput.nextInt();
 
-        if (gegevenLeeftijd <18) {
-            System.out.println("Jij mag geen staatslot kopen.");
-        }
-        else {
-            System.out.println("U mag een staatslot kopen.");
+            if (gegevenLeeftijd < 18) {
+                System.out.println("Jij mag geen staatslot kopen.");
+            } else {
+                System.out.println("U mag een staatslot kopen.");
+            }
         }
 
         // Maak hieronder een beslissingsstructuur (if/else).

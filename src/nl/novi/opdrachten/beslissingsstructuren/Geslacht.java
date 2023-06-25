@@ -6,15 +6,17 @@ public class Geslacht {
     public static void main(String[] args) {
         Scanner userInputScanner = new Scanner(System.in);
 
-        System.out.println("Wat is uw geslacht?");
-        String geslacht = userInputScanner.nextLine();
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Wat is uw geslacht?");
+            String geslacht = userInputScanner.nextLine();
 
-        if (geslacht.equalsIgnoreCase("man")) {
-            System.out.println("Dag meneer");
-        } else if (geslacht.equalsIgnoreCase("vrouw")) {
-            System.out.println("Dag mevrouw");
-        } else {
-            System.out.println("Dag persoon");
+            if (geslacht.equalsIgnoreCase("man")) {
+                System.out.println("Dag meneer");
+            } else if (geslacht.equalsIgnoreCase("vrouw")) {
+                System.out.println("Dag mevrouw");
+            } else {
+                System.out.println("Dag persoon");
+            }
         }
 
         /*
